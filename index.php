@@ -40,11 +40,7 @@
         <div class="row align-items-center">
 
           <div id="map" style="width:100%;height:480px;"></div>
-<<<<<<< HEAD
           <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap "></script>
-=======
-            <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAh0M3vKIhVO26dTSA_UMx-x2dl1JKlanb"></script>
->>>>>>> f47f607695615b0d9a7e8c5a2916ca325cde167b
 
           <script type="text/javascript">
             function initialize() {
@@ -65,7 +61,7 @@
 
             var officeLocations = [
               <?php
-              $data = file_get_contents('http://localhost/TUGAS-SIG/ambildata.php');
+              $data = file_get_contents('https://sigwisatajawatengah.000webhostapp.com/ambildata.php');
               $no = 1;
               if (json_decode($data, true)) {
                 $obj = json_decode($data);
